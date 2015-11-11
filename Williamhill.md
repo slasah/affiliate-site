@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Ladbrokes
-permalink: /ladbrokes/
+title: Williamhill
+permalink: /Williamhill/
+tag: featured
 ---
 ###### Ladbrokes.
 
