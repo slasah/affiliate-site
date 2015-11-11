@@ -16,7 +16,7 @@ This is page about luxbet.This is page about luxbet.This is page about luxbet.Th
 
 Some blurb
 
-###### Things to know
+# Things to know
 
     - What goes on tour stays on tour
     - What goes on tour stays on tour

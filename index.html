@@ -6,7 +6,26 @@ layout: default
   <div class="mdl-grid">
   
     <div class="bookies mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
-    
+    <h5>Top Bookies</h5>
+
+    <ul class="">
+      {% for my_page in site.pages %}
+      {% if my_page.title %}
+        <li class="var_nav">
+          <div class="link_bg"></div>
+            <div class="link_title">
+              <div class=icon> 
+                <i class="icon-mobile-phone icon-2x"></i>
+              </div>
+            <a href="{{ my_page.url | prepend: site.baseurl }}"><span>{{ my_page.title }}</span></a>
+          </div>
+        </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h5>Top Bonuses</h5>
+
     <ul class="">
       {% for my_page in site.pages %}
       {% if my_page.title %}
@@ -50,6 +69,45 @@ layout: default
    {% endfor %}
     
   </div>
+
+  <table class="mdl-data-table mdl-js-data-table">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Name</th>
+      <th class="mdl-data-table__cell--non-numeric">Nickname</th>
+      <th>Age</th>
+      <th class="mdl-data-table__cell--non-numeric">Living?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">John Lennon</td>
+      <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+      <td>40</td>
+      <td class="mdl-data-table__cell--non-numeric">No</td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Paul McCartney</td>
+      <td class="mdl-data-table__cell--non-numeric">The cute one</td>
+      <td>73</td>
+      <td class="mdl-data-table__cell--non-numeric">Yes</td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">George Harrison</td>
+      <td class="mdl-data-table__cell--non-numeric">The shy one</td>
+      <td>58</td>
+      <td class="mdl-data-table__cell--non-numeric">No</td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+      <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+      <td>74</td>
+      <td class="mdl-data-table__cell--non-numeric">Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+  
 </div>
 <div class="mdl-grid">
   <div class="mdl-card mdl-cell mdl-cell--12-col">
