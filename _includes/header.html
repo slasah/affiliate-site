@@ -51,6 +51,18 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Full reviews</span>
     <nav class="mdl-navigation drawer">
+
+    <a class="mdl-navigation__link" href="/">
+      <div class="drawer-bookie-list-icon">
+       <i class="material-icons">home</i>
+      </div>
+      <div class="drawer-bookie-list-text">
+      Home
+      </div>
+      </a>
+
+
+    
     {% for page in site.pages %}
       {% if page.title %}
       <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">

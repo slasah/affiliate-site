@@ -2,7 +2,6 @@
 layout: review
 title: Crownbet
 permalink: /crownbet/
-tag: featured
 bonusbet: $400
 deposit: $200
 betwith: $200

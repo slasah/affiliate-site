@@ -2,7 +2,6 @@
 layout: review
 title: Luxbet
 permalink: /luxbet/
-tag: featured
 excerpt_separator: <!--more-->
 bonusbet: $400
 deposit: $300

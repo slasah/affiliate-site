@@ -181,6 +181,18 @@ ul.check-list .check-list-text p{
   margin: 0 !important;  
 }
 
+
+.drawer a > *{
+  float:left;
+}
+
+.drawer a > *:first-child{
+  padding-left: 16px;
+}
+.drawer a > *:last-child{
+  padding: 0 16px 0 16px;
+}
+
 /*
 Special classes
 */
@@ -212,6 +224,10 @@ Special classes
     width:300px;
     background:light-grey;
     margin:24px 0;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    padding: 12px 7px;
 }
 
 @media (max-width: 479px) {

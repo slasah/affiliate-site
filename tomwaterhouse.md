@@ -2,7 +2,6 @@
 layout: review
 title: Tomwaterhouse
 permalink: /tomwaterhouse/
-tag: featured
 bonusbet: $400
 deposit: $300
 betwith: $300
