@@ -1,7 +1,7 @@
 ---
-layout: review
-title: Williamhill
-permalink: /williamhill/
+layout: page
+title: Betfair
+permalink: /betfair/
 tag: featured
 ---
 ###### Ladbrokes.

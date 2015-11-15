@@ -1,0 +1,61 @@
+<h5>Full Reviews</h5>
+
+<!-- <a class="bookie-link border-bottom" href="{{ my_page.url | prepend: site.baseurl }}">
+      <div class="bookie-icon">
+        <i class="fa fa-inbox">aa</i>
+      </div>
+      <div class="bookie-text">
+       hello there
+      </div>
+</a>
+<a class="bookie-link border-bottom" href="{{ my_page.url | prepend: site.baseurl }}">
+      <div class="bookie-icon">
+        <i class="fa fa-inbox">aa</i>
+      </div>
+      <div class="bookie-text">
+       hello there
+      </div>
+</a>
+<a class="bookie-link border-bottom" href="{{ my_page.url | prepend: site.baseurl }}">
+      <div class="bookie-icon">
+        <i class="fa fa-inbox">aa</i>
+      </div>
+      <div class="bookie-text">
+       hello there
+      </div>
+</a> -->
+
+  
+<ul class="bookie-list">
+    {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <li class="border-bottom">
+    <a class="bookie-list-link" href="{{ my_page.url | prepend: site.baseurl }}">
+      <div class="bookie-list-icon">
+       <img src="/img/bookies/{{ my_page.title }}/24x24.png" />
+      </div>
+      <div class="bookie-list-text">
+        {{ my_page.title }}
+      </div>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+
+    <!-- <ul class="">
+      {% for my_page in site.pages %}
+      {% if my_page.title %}
+        <li class="var_nav">
+          <div class="link_bg"></div>
+            <div class="link_title">
+              <div class=icon> 
+                <i class="icon-mobile-phone icon-2x"></i>
+              </div>
+            <a href="{{ my_page.url | prepend: site.baseurl }}"><span>{{ my_page.title }}</span></a>
+          </div>
+        </li>
+      {% endif %}
+      {% endfor %}
+    </ul> -->

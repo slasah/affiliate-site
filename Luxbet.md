@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: review
 title: Luxbet
 permalink: /Luxbet/
 tag: featured

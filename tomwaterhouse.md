@@ -1,7 +1,7 @@
 ---
 layout: review
-title: Williamhill
-permalink: /williamhill/
+title: Tomwaterhouse
+permalink: /tomwaterhouse/
 tag: featured
 ---
 ###### Ladbrokes.

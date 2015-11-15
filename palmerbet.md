@@ -1,7 +1,7 @@
 ---
 layout: review
-title: Williamhill
-permalink: /williamhill/
+title: Crownbet
+permalink: /crownbet/
 tag: featured
 ---
 ###### Ladbrokes.

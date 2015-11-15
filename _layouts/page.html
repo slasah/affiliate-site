@@ -6,24 +6,7 @@ layout: default
   <div class="mdl-grid">
   
     <div class="bookies mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
-    <h5>Top Bookies</h5>
-
-    <ul class="">
-      {% for my_page in site.pages %}
-      {% if my_page.title %}
-        <li class="var_nav">
-          <div class="link_bg"></div>
-            <div class="link_title">
-              <div class=icon> 
-                <i class="icon-mobile-phone icon-2x"></i>
-              </div>
-            <a href="{{ my_page.url | prepend: site.baseurl }}"><span>{{ my_page.title }}</span></a>
-          </div>
-        </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-
+    {% include top-bookies.html %}
   </div>
   <div class="bookies mdl-cell mdl-cell--10-col mdl-cell--4-col-phone">
   

@@ -29,85 +29,6 @@ $grey-color-dark:  darken($grey-color, 25%);
         "post",
         "search"
 ;
-.bookies ul
-{
-margin:0px;
-padding:0px;
-list-style-type:none;
--webkit-backface-visibility: hidden; backface-visibility: hidden;  
-}
-.bookies .var_nav
-{
-position:relative;
-background:#FFF; 
-width:100%;
-height:50px;
-margin-bottom:5px;
-}
-.bookies .link_bg
-{
- width:50px;
- height:50px;
- position:absolute;
- background:rgb(63,81,181);
- color:#000;
- z-index:2;
-}
-.bookies .link_bg i
-{
- position:relative;
-}
-.bookies .link_title
-{
-position:absolute;
-width:100%;
-z-index:3;
-color:#fff;
-}
-.var_nav:hover .link_bg
-{
-width:100%;
-background:rgb(63,81,181);
-}
-.var_nav:hover a
-{
-font-weight:bold;
--webkit-transition:all .5s ease-in-out;
--moz-transition:all .5s ease-in-out; 
--o-transition:all .5s ease-in-out; 
--ms-transition:all .5s ease-in-out;
- transition:all .5s ease-in-out;  
-}
-bookies .icon {
-    position:relative;
-    width:50px;
-    height:50px;
-    text-align:center;
-    color:#fff;
-    -webkit-transition:all .5s ease-in-out;
-    -moz-transition:all .5s ease-in-out; 
-    -o-transition:all .5s ease-in-out; 
-    -ms-transition:all .5s ease-in-out;   
-    float:left;
-    transition:all .5s ease-in-out;   
-    float:left;  
-}
-.bookies .icon i{top:22px;position:relative;}
-.bookies a{
-    display:block;
-    position:absolute;
-    float:left;
-    font-family:arial;
-    color:#000;
-    text-decoration:none;
-    width:100%;
-    height:50px;
-    text-align:center;
-}
-.bookies span{
-    margin-top:15px;
-    display:block;
-}
 
 .demo-card-square.mdl-card {
   width: 320px;
@@ -119,3 +40,165 @@ bookies .icon {
     url('../img/welcome_card.jpg') bottom right 15% no-repeat #46B6AC;
 }
 
+/*
+Material Design - Icons
+*/
+
+/* Material Design Lists - by Roko CB
+ - https://www.google.com/design/spec/components/lists.html
+ - http://stackoverflow.com/a/33312676/383904
+*/
+
+/*
+Material Design - Icons
+*/
+
+[class^=bookie-logo-]{
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  /*background: #999 50% / cover;*/
+  color: #fff;
+}
+.bookie-logo-24{
+  width:  24px;
+  height: 24px;
+}
+.bookie-logo-32{
+  width:  32px;
+  height: 32px;
+}
+.bookie-logo-40{
+  width:  40px;
+  height: 40px;
+}
+
+/*
+Material Design - Lists
+*/
+
+ul.bookie-list{
+  display: table;
+  width: 100%;
+  padding: 8px 0; /* 8 padding T/B */
+  margin: 0;
+  list-style: none;
+}
+
+ul.bookie-list li{
+  display: table-row;
+  height: 48px; /* that's actually min-height for rows */
+  &:hover {
+        background:$grey-color-light;
+    }
+}
+ul.bookie-list li a > *{
+  /* Align always to middle */
+  height:48px;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  color:  #333;
+  box-sizing: border-box;
+}
+
+ul.bookie-list li a > *:first-child{
+  /* Whoever is the first child it needs 16px left space */
+  padding-left: 16px;
+}
+ul.bookie-list li a > *:last-child{
+  /* Whoever is the last child it needs 16 right space */
+  padding-right: 16px;
+}
+
+ul.bookie-list .bookie-list-link{
+  /* Always left-align! Don't center icons */
+  text-decoration: none !important; 
+}
+
+ul.bookie-list a .bookie-list-icon{
+  /* Always left-align! Don't center icons */
+  width: 72px; /* 72-16 but we already use box-sizing */
+}
+ul.bookie-list a .bookie-list-text{
+  /*background: rgba(0,0,255,0.05);*/
+}
+
+ul.bookie-list a .bookie-list-text p{
+  margin: 0 !important;  
+}
+
+
+ul.check-list{
+  display: table;
+  width: 100%;
+  padding: 8px 0; /* 8 padding T/B */
+  margin: 0;
+  list-style: none;
+}
+
+ul.check-list li{
+  display: table-row;
+  height: 48px; /* that's actually min-height for rows */
+}
+ul.check-list li > *{
+  /* Align always to middle */
+  height:48px;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  color:  #333;
+  box-sizing: border-box;
+}
+
+ul.check-list li > *:first-child{
+  /* Whoever is the first child it needs 16px left space */
+  padding: 6px 16px 0 16px;
+  color: green;
+}
+ul.check-list li > *:last-child{
+  /* Whoever is the last child it needs 16 right space */
+  padding-right: 16px;
+}
+
+ul.check-list .check-list-link{
+  /* Always left-align! Don't center icons */
+  text-decoration: none !important; 
+}
+
+ul.check-list .check-list-icon{
+  /* Always left-align! Don't center icons */
+  width: 72px; /* 72-16 but we already use box-sizing */
+}
+ul.check-list .check-list-text{
+  /*background: rgba(0,0,255,0.05);*/
+}
+
+ul.check-list .check-list-text p{
+  padding: 0 !important;
+  margin: 0 !important;  
+}
+
+/*
+Special classes
+*/
+.border-bottom{
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+.demo-card-image.mdl-card {
+  width: 100%;
+  height: 250px;
+  background: url('../assets/demos/image_card.jpg') center / cover;
+}
+.claimbonus {
+    text-align:center;
+}
+
+.fullwidth {
+    
+    width:100%;
+
+}
