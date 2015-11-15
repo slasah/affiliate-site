@@ -11,7 +11,12 @@
 /* Default styles go here (explain the mobile-first approach) */
 
 
-
+/*color-primary
+color-primary-dark
+color-accent
+color-primary-contrast
+color-accent-contrast
+*/
 $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -28,6 +33,7 @@ $grey-color-dark:  darken($grey-color, 25%);
         "syntax-highlighting",
         "post",
         "search"
+        /*"material-design-lite"*/
 ;
 
 .demo-card-square.mdl-card {
@@ -184,6 +190,8 @@ ul.check-list .check-list-text p{
 
 .drawer a > *{
   float:left;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .drawer a > *:first-child{
@@ -214,6 +222,11 @@ Special classes
     width:100%;
 
 }
+
+/*.mdl-data-table th {
+    background-color: $color-primary;
+
+}*/
 
 .mdl-data-table__cell--non-numeric.mdl-data-table__cell--non-numeric, .mdl-data-table td {
      text-align: center; 
