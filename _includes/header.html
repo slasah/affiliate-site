@@ -50,10 +50,17 @@
 
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Menu</span>
-    <nav class="mdl-navigation">
+    <nav class="mdl-navigation drawer">
     {% for page in site.pages %}
       {% if page.title %}
-      <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">
+      <div class="drawer-bookie-list-icon">
+       <img src="{{ site.baseurl }}/img/bookies{{ page.permalink }}24x24.png" />
+      </div>
+      <div class="drawer-bookie-list-text">
+      {{ page.title }}
+      </div>
+      </a>
       {% endif %}
     {% endfor %}
     </nav>

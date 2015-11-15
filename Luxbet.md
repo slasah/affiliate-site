@@ -1,7 +1,7 @@
 ---
 layout: review
 title: Luxbet
-permalink: /Luxbet/
+permalink: /luxbet/
 tag: featured
 excerpt_separator: <!--more-->
 ---
