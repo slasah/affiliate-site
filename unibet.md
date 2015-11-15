@@ -1,8 +1,11 @@
 ---
 layout: review
 title: Unibet
-permalink: /unitbet/
+permalink: /unibet/
 tag: featured
+bonusbet: $400
+deposit: $300
+betwith: $300
 ---
 ###### Ladbrokes.
 

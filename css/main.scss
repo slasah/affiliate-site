@@ -190,10 +190,10 @@ Special classes
 
 .demo-card-image.mdl-card {
   width: 100%;
-  height: 250px;
+  height: 286px;
   background: url('../assets/demos/image_card.jpg') center / cover;
 }
-.claimbonus {
+.centertext {
     text-align:center;
 }
 
@@ -201,4 +201,24 @@ Special classes
     
     width:100%;
 
+}
+
+.mdl-data-table__cell--non-numeric.mdl-data-table__cell--non-numeric, .mdl-data-table td {
+     text-align: center; 
+}
+
+.bookie-review-logo {
+    height:45px;
+    width:300px;
+    background:light-grey;
+    margin:24px 0;
+}
+
+@media (max-width: 479px) {
+    .mdl-cell {
+        margin-top: 0 ;
+    }
+    .mdl-grid {
+        padding: 0;
+    }
 }

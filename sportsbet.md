@@ -4,6 +4,8 @@ title: Sportsbet
 permalink: /sportsbet/
 tag: featured
 bonusbet: $501
+deposit: $300
+betwith: $300
 ---
 
 ###About Sportsbet

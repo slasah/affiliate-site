@@ -1,8 +1,11 @@
 ---
-layout: page
+layout: review
 title: Betstar
 permalink: /betstar/
 tag: featured
+bonusbet: $400
+deposit: $300
+betwith: $30
 ---
 ###### Ladbrokes.
 

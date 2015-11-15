@@ -1,8 +1,11 @@
 ---
 layout: review
-title: Crownbet
-permalink: /crownbet/
+title: Palmerbet
+permalink: /palmerbet/
 tag: featured
+bonusbet: $400
+deposit: $200
+betwith: $200
 ---
 ###### Ladbrokes.
 

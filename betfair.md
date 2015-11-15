@@ -1,8 +1,11 @@
 ---
-layout: page
+layout: review
 title: Betfair
 permalink: /betfair/
 tag: featured
+bonusbet: $400
+deposit: $200
+betwith: $200
 ---
 ###### Ladbrokes.
 

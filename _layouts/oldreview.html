@@ -1,0 +1,123 @@
+---
+layout: default
+---
+<div class="mdl-grid mdl-cell mdl-cell--10-col">
+<div class="mdl-cell mdl-cell--5-col">
+<h3>{{ page.title }} - Full Review</h3>
+<div class="demo-card-image mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card--expand"></div>
+  <div class="mdl-card__actions">
+    <span class="demo-card-image__filename">Image.jpg</span>
+  </div>
+</div>
+
+<h5>Hits</h5>
+<ul class="check-list mdl-shadow--2dp">
+  <li>
+    <div class="check-list-icon">
+      <i class="material-icons">verified_user</i>
+    </div>
+    <div class="check-list-text">
+      <p>Good gambling company</p>
+    </div>
+  </li>
+  <li>
+    <div class="check-list-icon">
+      <i class="material-icons">verified_user</i>
+    </div>
+    <div class="check-list-text">
+      <p>Good gambling company</p>
+    </div>
+  </li>
+  <li>
+    <div class="check-list-icon">
+      <i class="material-icons">verified_user</i>
+    </div>
+    <div class="check-list-text">
+      <p>Good gambling company</p>
+    </div>
+  </li>
+  <li>
+    <div class="check-list-icon">
+      <i class="material-icons">verified_user</i>
+    </div>
+    <div class="check-list-text">
+      <p>Good gambling company</p>
+    </div>
+  </li>
+</ul>
+
+<h5>Misses</h5>
+<ul class="check-list mdl-shadow--2dp">
+  <li>
+    <div class="check-list-icon">
+      <i class="material-icons">verified_user</i>
+    </div>
+    <div class="check-list-text">
+      <p>Good gambling company</p>
+    </div>
+  </li>
+  <li>
+    <div class="check-list-icon">
+      <i class="material-icons">verified_user</i>
+    </div>
+    <div class="check-list-text">
+      <p>Good gambling company</p>
+    </div>
+  </li>
+</ul>
+</div>
+<div class="mdl-cell mdl-cell--5-col">
+{{ page.test }}
+      <!-- <div class="profile-logo slanted williamhill">
+        <a href="/link/williamhill/" target="_blank"><img src="https://dnu5embx6omws.cloudfront.net/Logos/williamhill/80x24.png"></a>
+      </div> -->
+      <h5>100% First Bet Match Up to {{ page.bonusbet }}</h5>
+      Deposit 
+      <strong>any</strong> amount and {{ page.title }} will match your first bet with a bonus bet up to {{ page.bonusbet }}.
+      <hr>
+      LIMITED TIME ONLY
+      <br><a href="/link/williamhill/" target="_blank">Offers Claimed</a>
+      <hr>
+       <!--  <div class="mdl-cell mdl-cell--1-col">
+          DEPOSIT &amp; BET     
+          <br><a href="/link/williamhill/" target="_blank">{{ page.deposit }}</a>
+        </div>
+        <div class="mdl-cell mdl-cell--1-col">
+          BONUS BET
+          <br><a href="/link/williamhill/" target="_blank">{{ page.bonusbet }}</a>
+        </div>
+        <div class="mdl-cell mdl-cell--1-col">
+          BET WITH
+          <br><a href="/link/williamhill/" target="_blank">{{ page.betwith }}</a>
+        </div> -->
+
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp fullwidth">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">DEPOSIT &amp; BET </th>
+      <th class="mdl-data-table__cell--non-numeric">BONUS BET</th>
+      <th class="mdl-data-table__cell--non-numeric">BET WITH</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>{{ page.deposit }}</td>
+      <td>{{ page.bonusbet }}</td>
+      <td>{{ page.betwith }}</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<div class="claimbonus">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Claim {{ page.bonusbet }} bonus bet
+    </button>
+</div>
+</div>
+ 
+  <div class="mdl-cell mdl-cell--10-col">
+        <p>{{ content }}</p>
+      </div>
+  <!-- <button class="mdl-button mdl-js-button mdl-button--raised">Button</button> -->
+</div>

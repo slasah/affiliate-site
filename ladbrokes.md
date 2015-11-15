@@ -1,8 +1,11 @@
 ---
-layout: page
+layout: review
 title: Ladbrokes
 permalink: /ladbrokes/
 tag: featured
+bonusbet: $400
+deposit: $300
+betwith: $300
 ---
 ###### Ladbrokes.
 
