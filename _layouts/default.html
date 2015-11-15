@@ -55,6 +55,14 @@
         inputSelector: '#js-search__input', // CSS selector for <input>
         resultsSelector: '#js-search__results' // CSS selector for results container
       });
+      $(function() {      
+    $(".mdl-layout").swipe( {
+        //Generic swipe handler for all directions
+        swipeRight:function(event, direction, distance, duration, fingerCount) {
+            $(".mdl-layout__drawer-button").click();                        
+        },
+    });
+});
     </script>
   </body>
 
