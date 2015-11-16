@@ -39,4 +39,4 @@ excerpt_separator: <!--more-->
 collections:
   bookies:
     foo: bar
-    permalink: /awesome/:path/
+    permalink: /reviews/:path/

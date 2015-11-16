@@ -8,10 +8,11 @@ layout: default
 }
 </style>
 <div class="mdl-grid mdl-cell mdl-cell--10-col">
+<div class="mdl-cell mdl-cell--10-col">
+
+<h3>{{ page.title }}</h3>
+</div>
 <div class="mdl-cell mdl-cell--5-col">
-  <h3>{{ page.title }}</h3>
-
-
 
   <div class="demo-card-image mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title mdl-card--expand"></div>
@@ -23,45 +24,78 @@ layout: default
   </div>
   </div>
   </div>
+  
+  <br>
+  <div class="mdl-cell--hide-desktop">
+   {% include offertable.html %}
+  </div>
 </div>
 
   <div class="mdl-cell mdl-cell--5-col">
-      <div class="bookie-review-logo">
-        <a href="/link/williamhill/" target="_blank"><!--<img src="https://dnu5embx6omws.cloudfront.net/Logos/williamhill/80x24.png"> --></a>
-      </div>
+      <!-- <div class="bookie-review-logo"> -->
+        <!-- <a href="/link/williamhill/" target="_blank"><img src="https://dnu5embx6omws.cloudfront.net/Logos/williamhill/80x24.png"> </a> -->
+      <!-- </div> -->
       <h5>100% First Bet Match Up to {{ page.bonusbet }}</h5>
       Deposit 
       <strong>any</strong> amount and {{ page.title }} will match your first bet with a bonus bet up to {{ page.bonusbet }}.
       <hr>
-      LIMITED TIME ONLY
-      <br><a href="/link/williamhill/" target="_blank">Offers Claimed</a>
+      <div class="mdl-cell--stretch mdl-typography--text-center">
+      <span class="mdl-cell--stretch">LIMITED TIME ONLY</span>
+      </div>
       <hr>
+      <!-- <br><a href="/link/williamhill/" target="_blank">Offers Claimed</a> -->
+      <!-- <hr>-->
+      
+      <div class="mdl-cell--hide-phone">
+      {% include offertable.html %}
+      </div>
+<!--
+      <div class="mdl-grid mdl-cell mdl-cell--12-col"> 
+      <div class="mdl-cell mdl-cell--4-col">
+      EASE OF USE
+      </div>
+      <div class="mdl-cell mdl-cell--8-col">
+        {% assign num = page.easeofuse %}
+        {% for i in (1..num) %}
+          <i class="material-icons">star</i>
+        {% endfor %}
+      </div>
+      </div>
 
-      <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp fullwidth">
-      <thead>
-      <tr>
-      <th class="mdl-data-table__cell--non-numeric">DEPOSIT &amp; BET </th>
-      <th class="mdl-data-table__cell--non-numeric">BONUS BET</th>
-      <th class="mdl-data-table__cell--non-numeric">BET WITH</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-      <td class="centertext">{{ page.deposit }}</td>
-      <td>{{ page.bonusbet }}</td>
-      <td>{{ page.betwith }}</td>
-      </tr>
-      </tbody>
-      </table>
+       <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--5-col-phone"> 
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-phone">
+      FIXED ODDS
+      </div>
+      <div class="mdl-cell mdl-cell--8-col mdl-cell--2-col-phone">
+        {% assign num = page.fixedodds %}
+        {% for i in (1..num) %}
+          <i class="material-icons">star</i>
+        {% endfor %}
+      </div>
+      </div>
+
+      <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--5-col-phone"> 
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      EARLY ODDS
+      </div>
+      <div class="mdl-cell mdl-cell--8-col mdl-cell--2-col-phone">
+        {% assign num = page.earlyodds %}
+        {% for i in (1..num) %}
+          <i class="material-icons">star</i>
+        {% endfor %}
+      </div>
+      </div> -->
+    
+
 </div>
 
 <div class="mdl-cell mdl-cell--5-col">
-<h5>Hits</h5>
+<h5>THE GOOD</h5>
 <ul class="check-list mdl-shadow--2dp">
   {% for item in page.goodpoints %}
     <li>
     <div class="check-list-icon">
-      <i class="material-icons">verified_user</i>
+      <i class="material-icons">mood</i>
     </div>
     <div class="check-list-text">
       <p>{{ item.point }}</p>
@@ -71,24 +105,18 @@ layout: default
 </ul>
 </div>
 <div class="mdl-cell mdl-cell--5-col">
-  <h5>Misses</h5>
+  <h5>THE BAD</h5>
   <ul class="check-list mdl-shadow--2dp">
+    {% for item in page.badpoints %}
     <li>
       <div class="check-list-icon">
-        <i class="material-icons">verified_user</i>
+        <i class="material-icons red">mood_bad</i>
       </div>
       <div class="check-list-text">
-        <p>Bad Point</p>
+        <p>{{ item.point }}</p>
       </div>
     </li>
-    <li>
-      <div class="check-list-icon">
-        <i class="material-icons">verified_user</i>
-      </div>
-      <div class="check-list-text">
-        <p>Bad Point</p>
-      </div>
-    </li>
+   {% endfor %}
   </ul>
 </div>
 

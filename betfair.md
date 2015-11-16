@@ -6,6 +6,14 @@ tag: featured
 bonusbet: $400
 deposit: $200
 betwith: $200
+goodpoints:
+  - point: a website
+  - point: a website
+  - point: a website
+
+badpoints:
+  - point: a website
+  - point: a website
 ---
 ###### Ladbrokes.
 
