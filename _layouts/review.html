@@ -9,7 +9,7 @@ layout: default
 </style>
 <div class="mdl-grid mdl-cell mdl-cell--10-col">
 <div class="mdl-cell mdl-cell--5-col">
-  <h3>{{ page.title }} - Full Review</h3>
+  <h3>{{ page.title }}</h3>
 
 
 
@@ -58,38 +58,16 @@ layout: default
 <div class="mdl-cell mdl-cell--5-col">
 <h5>Hits</h5>
 <ul class="check-list mdl-shadow--2dp">
-  <li>
+  {% for item in page.goodpoints %}
+    <li>
     <div class="check-list-icon">
       <i class="material-icons">verified_user</i>
     </div>
     <div class="check-list-text">
-      <p>Good point</p>
+      <p>{{ item.point }}</p>
     </div>
   </li>
-  <li>
-    <div class="check-list-icon">
-      <i class="material-icons">verified_user</i>
-    </div>
-    <div class="check-list-text">
-      <p>Good point</p>
-    </div>
-  </li>
-  <li>
-    <div class="check-list-icon">
-      <i class="material-icons">verified_user</i>
-    </div>
-    <div class="check-list-text">
-      <p>Good point</p>
-    </div>
-  </li>
-  <li>
-    <div class="check-list-icon">
-      <i class="material-icons">verified_user</i>
-    </div>
-    <div class="check-list-text">
-      <p>Good point</p>
-    </div>
-  </li>
+  {% endfor %}
 </ul>
 </div>
 <div class="mdl-cell mdl-cell--5-col">
