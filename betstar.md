@@ -7,9 +7,9 @@ bonusbet: $400
 deposit: $300
 betwith: $30
 goodpoints:
-  - point: a website
-  - point: a website
-  - point: a website
+  - point: a betstar good point
+  - point: a betstar good point
+  - point: a betstar good point
 
 badpoints:
   - point: a website
