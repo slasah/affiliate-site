@@ -1,16 +1,17 @@
-<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp fullwidth">
-      <thead>
+<table>
+    <thead>
+        <tr>
+          <th data-field="id">DEPOSIT &amp; BET</th>
+          <th data-field="bonusbet">BONUS BET</th>
+          <th data-field="betwith">BET WITH</th>
+    </tr>
+</thead>
+
+<tbody>
       <tr>
-      <th class="mdl-data-table__cell--non-numeric">DEPOSIT &amp; BET </th>
-      <th class="mdl-data-table__cell--non-numeric">BONUS BET</th>
-      <th class="mdl-data-table__cell--non-numeric">BET WITH</th>
+            <td class="centertext">{{ page.deposit }}</td>
+            <td>{{ page.bonusbet }}</td>
+            <td>{{ page.betwith }}</td>
       </tr>
-      </thead>
-      <tbody>
-      <tr>
-      <td class="centertext">{{ page.deposit }}</td>
-      <td>{{ page.bonusbet }}</td>
-      <td>{{ page.betwith }}</td>
-      </tr>
-      </tbody>
-      </table>
+</tbody>
+</table>
