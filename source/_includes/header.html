@@ -1,0 +1,42 @@
+<!-- <nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="/index.html" class="brand-logo">J+M</a>
+    <ul class="right hide-on-med-and-down">
+      {% for page in site.pages %}
+      {% if page.title %}
+      <li><a class="page-link" href="{{ page.url | prepend:site.baseurl }}">{{ page.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      {% for page in site.pages %}
+      <li><a href="#">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav> -->
+<nav>
+ <div id="slide-out" class="side-nav fixed">
+     
+<div>test</div>
+<ul class=" bookie-list">
+    {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <li class="border-bottom">
+    <a class="bookie-list-link" href="{{ my_page.url | prepend: site.baseurl }}">
+      <div class="bookie-list-icon">
+       <img src="{{ site.baseurl }}/img/bookies{{ my_page.permalink }}24x24.png" />
+      </div>
+      <div class="bookie-list-text">
+        {{ my_page.title }}
+      </div>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    </ul>
+    </div>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>

@@ -1,0 +1,159 @@
+---
+layout: default
+---
+<style>
+.card > .card-image {
+  background:
+    url('{{ site.baseurl }}/img/bookies/{{ page.permalink }}website_small.png') top left 15% no-repeat;
+}
+</style>
+
+
+<div class="row">
+<div class="col s12">
+  <h1>{{ page.title }}</h1>
+</div>
+</div>
+<div class="row">
+        <div class="col s12 m7 l6">
+          <div class="card small">
+            <div class="card-image">
+              <!-- <img src="{{ site.baseurl }}/img/bookies/{{ page.permalink }}website_small.png"> -->
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                       <button class="waves-effect waves-light btn-large">
+          Claim {{ page.bonusbet }} bonus bet now!
+          </button>
+            </div>
+          </div>
+        </div>
+        <div class="center-align col s12 m7 l6">
+          <button class="waves-effect waves-light btn-large">
+          Claim {{ page.bonusbet }} bonus bet now!
+          </button>
+        </div>
+</div>
+
+<div class="mdl-grid mdl-cell mdl-cell--10-col">
+<div class="mdl-cell mdl-cell--10-col">
+
+
+</div>
+<div class="mdl-cell mdl-cell--5-col">
+
+  <div class="demo-card-image mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card--expand"></div>
+  <div class="mdl-card__actions">
+  <div class="centertext">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      Claim {{ page.bonusbet }} bonus bet now!
+      </button>
+  </div>
+  </div>
+  </div>
+  
+  <br>
+  <div class="mdl-cell--hide-desktop">
+   {% include offertable.html %}
+  </div>
+</div>
+
+  <div class="mdl-cell mdl-cell--5-col">
+      <!-- <div class="bookie-review-logo"> -->
+        <!-- <a href="/link/williamhill/" target="_blank"><img src="https://dnu5embx6omws.cloudfront.net/Logos/williamhill/80x24.png"> </a> -->
+      <!-- </div> -->
+      <h5>100% First Bet Match Up to {{ page.bonusbet }}</h5>
+      Deposit 
+      <strong>any</strong> amount and {{ page.title }} will match your first bet with a bonus bet up to {{ page.bonusbet }}.
+      <hr>
+      <div class="mdl-cell--stretch mdl-typography--text-center">
+      <span class="mdl-cell--stretch">LIMITED TIME ONLY</span>
+      </div>
+      <hr>
+      <!-- <br><a href="/link/williamhill/" target="_blank">Offers Claimed</a> -->
+      <!-- <hr>-->
+      
+      <div class="mdl-cell--hide-phone">
+      {% include offertable.html %}
+      </div>
+<!--
+      <div class="mdl-grid mdl-cell mdl-cell--12-col"> 
+      <div class="mdl-cell mdl-cell--4-col">
+      EASE OF USE
+      </div>
+      <div class="mdl-cell mdl-cell--8-col">
+        {% assign num = page.easeofuse %}
+        {% for i in (1..num) %}
+          <i class="material-icons">star</i>
+        {% endfor %}
+      </div>
+      </div>
+
+       <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--5-col-phone"> 
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-phone">
+      FIXED ODDS
+      </div>
+      <div class="mdl-cell mdl-cell--8-col mdl-cell--2-col-phone">
+        {% assign num = page.fixedodds %}
+        {% for i in (1..num) %}
+          <i class="material-icons">star</i>
+        {% endfor %}
+      </div>
+      </div>
+
+      <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--5-col-phone"> 
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      EARLY ODDS
+      </div>
+      <div class="mdl-cell mdl-cell--8-col mdl-cell--2-col-phone">
+        {% assign num = page.earlyodds %}
+        {% for i in (1..num) %}
+          <i class="material-icons">star</i>
+        {% endfor %}
+      </div>
+      </div> -->
+    
+
+</div>
+
+<div class="mdl-cell mdl-cell--5-col">
+<h5>THE GOOD</h5>
+<ul class="check-list mdl-shadow--2dp">
+  {% for item in page.goodpoints %}
+    <li>
+    <div class="check-list-icon">
+      <i class="material-icons">mood</i>
+    </div>
+    <div class="check-list-text">
+      <p>{{ item.point }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+</div>
+<div class="mdl-cell mdl-cell--5-col">
+  <h5>THE BAD</h5>
+  <ul class="check-list mdl-shadow--2dp">
+    {% for item in page.badpoints %}
+    <li>
+      <div class="check-list-icon">
+        <i class="material-icons red">mood_bad</i>
+      </div>
+      <div class="check-list-text">
+        <p>{{ item.point }}</p>
+      </div>
+    </li>
+   {% endfor %}
+  </ul>
+</div>
+
+  <div class="mdl-cell mdl-cell--10-col">
+        <p>{{ content }}</p>
+      </div>
+  <!-- <button class="mdl-button mdl-js-button mdl-button--raised">Button</button> -->
+</div>

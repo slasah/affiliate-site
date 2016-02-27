@@ -1,0 +1,17 @@
+# Site settings
+title: Jekyll + Materialize = <3
+description: "Just when you didn't think Jekyll could get any better, it got materialized."
+#baseurl: "/jeklayback" # the subpath of your site, e.g. /blog/
+#url: "http://andrew1980uk.github.io/jeklayback" # the base hostname & protocol for your site
+destination: ../site/
+
+# Build settings
+markdown: kramdown
+
+#excerpt
+excerpt_separator: <!--more-->
+
+collections:
+  bookies:
+    foo: bar
+    permalink: /reviews/:path/
