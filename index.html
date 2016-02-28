@@ -2,109 +2,54 @@
 layout: default
 ---
 <div class="card z-depth-2">
-  <h1 class="header center orange-text">{{ site.title }}</h1>
+  <h2 class="header center orange-text">{{ site.title }}</h2>
   <div class="row center">
     <h5 class="header col s12 light">{{ site.description }}</h5>
   </div>
 </div>
 
 <div class="row">
+{% assign counter = '0' %}
+{% for page in site.pages %}
+{% if page.tag == 'featured' %}
+    <div class="col s12 m4 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+            <img alt='{{ page.title }}' title='{{ page.title }}' src ="{{ site.baseurl }}/img/bookies/{{ page.permalink }}320x90.gif" />
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              Deposit <span class="bold">{{ page.deposit }}</span> and get a {{ page.bonusbet }} bonus bet!
+            </div>
+            <div class="card-action center-align">
+              <a href="{{ page.url | prepend: site.baseurl }}">Read more!</a>
+            </div>
+          </div>
+    </div>
+    {% endif %}
+{% endfor %}
+    </div>
 
-<!-- <div class="col s12 m4 l2 featured z-depth-1">z-depth-1</div>
-<div class="col s12 m4 l2 featured z-depth-2">z-depth-2</div>
-<div class="col s12 m4 l2 featured z-depth-3">z-depth-3</div>
-<div class="col s12 m4 l2 featured z-depth-4">z-depth-4</div>
-<div class="col s12 m4 l2 featured z-depth-5">z-depth-5</div> -->
-     <div class="col s12 m4 l2">
-      <div class="card">
+    <div class="row">
+{% assign counter = '0' %}
+{% for page in site.pages %}
+{% if page.title and page.tag != 'featured' %}
+    <div class="col s12 m4 l2">
+          <div class="card hoverable">
             <div class="card-image">
-             <!-- <img src="images/sample-1.jpg"> -->
-              <span class="card-title">Card Title</span>
+            <img alt='{{ page.title }}' title='{{ page.title }}' src ="{{ site.baseurl }}/img/bookies/{{ page.permalink }}320x90.gif" />
+              <span class="card-title"></span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              Deposit <span class="bold">{{ page.deposit }}</span> and get a {{ page.bonusbet }} bonus bet!
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-      <div class="col s12 m4 l2">
-      <div class="card">
-            <div class="card-image">
-             <!-- <img src="images/sample-1.jpg"> -->
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+            <div class="card-action center-align">
+              <a href="{{ page.url | prepend: site.baseurl }}">Read more!</a>
             </div>
           </div>
-      </div>
-      <div class="col s12 m4 l2">
-      <div class="card">
-            <div class="card-image">
-             <!-- <img src="images/sample-1.jpg"> -->
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-      <div class="col s12 m4 l2">
-      <div class="card">
-            <div class="card-image">
-             <!-- <img src="images/sample-1.jpg"> -->
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-      <div class="col s12 m4 l2">
-      <div class="card">
-            <div class="card-image">
-             <!-- <img src="images/sample-1.jpg"> -->
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-      <div class="col s12 m4 l2">
-      <div class="card">
-            <div class="card-image">
-             <!-- <img src="images/sample-1.jpg"> -->
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
+    </div>
+    {% endif %}
+{% endfor %}
     </div>
 
 

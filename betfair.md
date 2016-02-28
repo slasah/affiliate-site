@@ -7,7 +7,7 @@ bonusbet: $400
 deposit: $200
 betwith: $200
 goodpoints:
-  - point: a website
+  - point: LIMITED TIME ONLY!
   - point: a website
   - point: a website
 

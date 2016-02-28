@@ -13,7 +13,7 @@ fixedodds: 4
 easeofuse: 5
 
 goodpoints:
-  - point: a website
+  - point: LIMITED TIME ONLY!
   - point: a website
   - point: a website
   - point: a website

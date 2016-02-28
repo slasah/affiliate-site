@@ -67,3 +67,18 @@ ul.bookie-list a .bookie-list-text p{
   .parallax-container {
       height: 200px;
     }
+
+    @media #{$large-and-up} {
+    .page-content {
+    padding-left: 130px;
+      }
+    }
+ @media #{$small-and-down} {
+    // styles for small screens and down
+    .reviewLogo {
+    text-align: center;
+    }
+    }
+    nav a.button-collapse i {
+    padding-left: 20px;
+    }

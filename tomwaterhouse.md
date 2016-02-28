@@ -5,8 +5,9 @@ permalink: /tomwaterhouse/
 bonusbet: $400
 deposit: $300
 betwith: $300
+tag: featured
 goodpoints:
-  - point: a website
+  - point: LIMITED TIME ONLY!
   - point: a website
   - point: a website
 

@@ -7,7 +7,8 @@ layout: default
   height:300px;
   background:
     url('{{ site.baseurl }}/img/bookies/{{ page.permalink }}website_small.png') top left 15% no-repeat;
-    background-size: 300px 300px;
+    background-size: 300px;
+        background-position: top;
 }
 </style>
 
@@ -18,30 +19,22 @@ layout: default
 </div> -->
 
 <div class="row">
-<div class="col s12">
-  <h1>{{ page.title }}</h1>
+<div class="col s12 reviewLogo">
+<img alt='{{ page.title }}' title='{{ page.title }}' src ="{{ site.baseurl }}/img/bookies/{{ page.permalink }}320x90.gif" />
 </div>
 </div>
 <div class="row card-panel">
-        <div class="bookieWebsiteImage col s12 m12 l6">
-
+        <div class="bookieWebsiteImage col s12 m12 l6 col s12">
         </div>
           <div class='col s12 m12 l6'>
-          <h5>100% First Bet Match Up to {{ page.bonusbet }}</h5>
+          <h5>100% First Bet Match Up to {{ page.bonusbet }}!</h5>
           Deposit 
           <strong>any</strong> amount and {{ page.title }} will match your first bet with a bonus bet up to {{ page.bonusbet }}.
-          <hr>
-          <div class="mdl-cell--stretch mdl-typography--text-center">
-          <span class="mdl-cell--stretch">LIMITED TIME ONLY</span>
-          </div>
+          <br>
           <hr>
           </div>
-          <div class='col s12 m12 l6'>
+          <div class='col s12 m12 l6 center-align'>
           {% include offertable.html %}
-          </div>
-          <br>
-          <br>
-          <div class="center-align col s12 m12 l6">
           <button class="waves-effect waves-light btn-large">
           Claim {{ page.bonusbet }} bonus bet now!
           </button>
@@ -49,43 +42,23 @@ layout: default
 </div>
 
 <div class="row">
-<div class="col s12 m12 l12">
+<div class="col s12 m6 l6">
+
       <p>{{ content }}</p>
 </div>
+<div class="col s12 m6 l6">
 
-<div class="row">
 
-<div class="col s12 m12 l6">
-<h5>THE GOOD</h5>
-<ul class="check-list">
-  {% for item in page.goodpoints %}
-    <li>
-    <div class="check-list-icon">
-      <i class="material-icons">mood</i>
-    </div>
-    <div class="check-list-text">
-      <p>{{ item.point }}</p>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
-</div>
-
-<div class="col s12 m12 l6">
-  <h5>THE BAD</h5>
-  <ul class="check-list mdl-shadow--2dp">
-    {% for item in page.badpoints %}
-    <li>
-      <div class="check-list-icon">
-        <i class="material-icons red">mood_bad</i>
-      </div>
-      <div class="check-list-text">
-        <p>{{ item.point }}</p>
-      </div>
+<ul class="collection with-header">
+<li class="collection-header"><h5>Key points</h5></li>
+ {% for item in page.goodpoints %}
+    <li class="collection-item">
+      <!-- <span class="title">{{ item.title }}</span> -->
+      <div>{{ item.point }}
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a></div>
     </li>
-   {% endfor %}
+    {% endfor %}
   </ul>
-</div>
 
 </div>
 
