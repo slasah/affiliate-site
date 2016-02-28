@@ -64,8 +64,8 @@ ul.bookie-list a .bookie-list-text p{
       }
     }
 
-  .parallax-container {
-      height: 200px;
+    .side-nav .logoLink {
+      height: 150px;
     }
 
     @media #{$large-and-up} {
@@ -79,6 +79,9 @@ ul.bookie-list a .bookie-list-text p{
     text-align: center;
     }
     }
+
     nav a.button-collapse i {
     padding-left: 20px;
     }
+
+  
