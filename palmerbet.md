@@ -14,7 +14,10 @@ badpoints:
   - point: a website
   - point: a website
 ---
-###### palmerbet.
+Palmerbet is an Australian owned and NSW licensed bookmaker. 
 
-This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.
-This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.This is page about palmerbet.
+They operate out of an office at Canterbury Racecourse in New South Wales. 
+
+They also operate oncourse on all Sydney Metropolitan races located on the Rails. 
+
+The Palmer family has been associated with betting in Sydney for over 30 years, however they are a new entrant to online wagering, with Palmerbet.com launched in August 2013. 

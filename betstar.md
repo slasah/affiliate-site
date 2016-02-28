@@ -15,7 +15,6 @@ badpoints:
   - point: a website
   - point: a website
 ---
-###### Betstar.
+Betstar (Eskander's Betstar) established in 2007,[1] is an Australian Corporate Bookmaking firm that are based and established within Melbourne and Darwin.
 
-This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.
-This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.This is page about Betstar.
+Betstar employ 40+ staff split between the Melbourne & Darwin offices. Betstar turns over in excess of $275 million per year & offers customers phone or internet betting as well as sporting news, commentary, competitions and promotions.
