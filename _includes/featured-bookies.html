@@ -1,24 +1,8 @@
----
-layout: default
----
-<div class="card z-depth-2 teal darken-3 white-text">
-
-  <h2 class="header center ">{{ site.title }}</h2>
-  <div class="row center">
-    <h5 class="header col s12 light">{{ site.description }}</h5>
-  </div>
-</div>
-
-{% include featured-bookies.html %}
-
-<div class="row show-on-small hide-on-large center-align">
-<h3 class="hide-on-large-only">Other offers</h3>
-</div>
 <div class="row">
 {% assign counter = '0' %}
 {% for page in site.pages %}
-{% if page.title and page.tag != 'featured' %}
-    <div class="col s6 m4 l2">
+{% if page.tag == 'featured' %}
+    <div class="col s6 m4 l4">
           <div class="card hoverable">
             <div class="card-image">
             <img alt='{{ page.title }}' title='{{ page.title }}' src ="{{ site.baseurl }}/img/bookies/{{ page.permalink }}320x90.gif" />
@@ -34,6 +18,4 @@ layout: default
     </div>
     {% endif %}
 {% endfor %}
- </div>
-
-
+    </div>
