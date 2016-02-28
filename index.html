@@ -13,7 +13,7 @@ layout: default
 {% assign counter = '0' %}
 {% for page in site.pages %}
 {% if page.tag == 'featured' %}
-    <div class="col s12 m4 l4">
+    <div class="col s6 m4 l4">
           <div class="card hoverable">
             <div class="card-image">
             <img alt='{{ page.title }}' title='{{ page.title }}' src ="{{ site.baseurl }}/img/bookies/{{ page.permalink }}320x90.gif" />
@@ -30,12 +30,14 @@ layout: default
     {% endif %}
 {% endfor %}
     </div>
-
-    <div class="row">
+<div class="row show-on-small hide-on-large center-align">
+<h3 class="hide-on-large-only">Other offers</h3>
+</div>
+<div class="row">
 {% assign counter = '0' %}
 {% for page in site.pages %}
 {% if page.title and page.tag != 'featured' %}
-    <div class="col s12 m4 l2">
+    <div class="col s6 m4 l2">
           <div class="card hoverable">
             <div class="card-image">
             <img alt='{{ page.title }}' title='{{ page.title }}' src ="{{ site.baseurl }}/img/bookies/{{ page.permalink }}320x90.gif" />
