@@ -65,15 +65,18 @@
 					messageContent.html(resultMessage);
 				}
             } else {
+
+                $(".formRow").fadeOut( "slow", function() {
+                    $("#closeMailList").show();
+                    messageContent.html(resultMessage);
+                    messageHeader.html(resultHeader);
+                });
+                
             	resultHeader  = "Almost there!";
                 resultMessage = "Thanks, you must now confirm the subscription by following the instructions in the email we just sent you.";
             }
 
-            $(".formRow").fadeOut( "slow", function() {
-	            $("#closeMailList").show();
-	            messageContent.html(resultMessage);
-	            messageHeader.html(resultHeader);
-        	});
+            
 
         }
     });
