@@ -1,43 +1,48 @@
-  <header class="mdl-layout__header">
-
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">{{ site.title }}</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      
-
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="js-search__input">
-          <i class="material-icons">search</i>
-        </label>
-
-        <div class="mdl-textfield__expandable-holder" >
-          <input class="mdl-textfield__input super-search__input" type="text" id="js-search__input" />
-        </div>
-      </div>
-
-      <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
-        <i class="material-icons">more_vert</i>
-      </button>
-
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
-        {% for option in site.more_vert %}
-        <li><a href="{{ option[1].link }}" class="mdl-menu__item">{{ option[1].name }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </header>
-
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Menu</span>
-    <nav class="mdl-navigation">
-    {% for page in site.pages %}
+<!-- <nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="/index.html" class="brand-logo">J+M</a>
+    <ul class="right hide-on-med-and-down">
+      {% for page in site.pages %}
       {% if page.title %}
-      <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <li><a class="page-link" href="{{ page.url | prepend:site.baseurl }}">{{ page.title }}</a></li>
       {% endif %}
-    {% endfor %}
-    </nav>
+      {% endfor %}
+    </ul>
 
+    <ul id="nav-mobile" class="side-nav">
+      {% for page in site.pages %}
+      <li><a href="#">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>
+</nav> -->
+<nav>
+ <div id="slide-out" class="side-nav fixed">
+   <div class="row center-align">
+     <a class="logoLink" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/img/logo.gif" />
+     </a>
+  </div>   
 
+<ul class=" bookie-list">
+    {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <li class="border-bottom">
+    <a class="bookie-list-link" href="{{ my_page.url | prepend: site.baseurl }}">
+      <div class="bookie-list-icon">
+       <img src="{{ site.baseurl }}/img/bookies{{ my_page.permalink }}24x24.png" />
+      </div>
+      <div class="bookie-list-text">
+        {{ my_page.title }}
+      </div>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    </ul>
+
+    </div>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+</nav>

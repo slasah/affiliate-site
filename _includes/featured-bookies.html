@@ -1,0 +1,21 @@
+<div class="row">
+{% assign counter = '0' %}
+{% for page in site.pages %}
+{% if page.tag == 'featured' %}
+    <div class="col s6 m4 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+            <img alt='{{ page.title }}' title='{{ page.title }}' src ="{{ site.baseurl }}/img/bookies/{{ page.permalink }}320x90.gif" />
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content center-align">
+              Deposit <span class="bold">{{ page.deposit }}</span> and get a {{ page.bonusbet }} bonus bet!
+            </div>
+            <div class="card-action center-align flow-text">
+              <a href="{{ page.url | prepend: site.baseurl }}" class="flow-text">Read more&hellip;</a>
+            </div>
+          </div>
+    </div>
+    {% endif %}
+{% endfor %}
+    </div>

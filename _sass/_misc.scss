@@ -1,0 +1,91 @@
+ul.bookie-list{
+  display: table;
+  width:100%;
+  padding: 8px 0; /* 8 padding T/B */
+  margin: 0;
+  list-style: none;
+}
+
+ul.bookie-list li{
+  /*display: table-row;*/
+  height: 48px; /* that's actually min-height for rows */
+  &:hover {
+        background:$grey-color-light;
+    }
+}
+ul.bookie-list li a > *{
+  /* Align always to middle */
+  line-height: 17px;
+  height:48px;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  color:  #333;
+  box-sizing: border-box;
+}
+
+ul.bookie-list li a > *:first-child{
+  /* Whoever is the first child it needs 16px left space */
+  padding-left: 0px;
+}
+ul.bookie-list li a > *:last-child{
+  /* Whoever is the last child it needs 16 right space */
+  padding-right: 0px;
+}
+
+ul.bookie-list .bookie-list-link{
+  /* Always left-align! Don't center icons */
+  text-decoration: none !important; 
+}
+
+ul.bookie-list a .bookie-list-icon{
+  /* Always left-align! Don't center icons */
+  width: 52px; /* 72-16 but we already use box-sizing */
+}
+ul.bookie-list a .bookie-list-text{
+  /*background: rgba(0,0,255,0.05);*/
+}
+
+ul.bookie-list a .bookie-list-text p{
+  margin: 0 !important;  
+}
+
+
+/* FIXED SIDENAV FIX */
+
+    header, main, footer {
+      padding-left: 240px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+
+    .side-nav .logoLink {
+      height: 150px;
+    }
+
+    @media #{$large-and-up} {
+    .page-content {
+    padding-left: 130px;
+      }
+    }
+ @media #{$small-and-down} {
+    // styles for small screens and down
+    .reviewLogo {
+    text-align: center;
+    }
+    }
+
+    nav a.button-collapse i {
+    padding-left: 20px;
+    }
+
+    .error {
+    color: red !important;
+    }
+
+  
